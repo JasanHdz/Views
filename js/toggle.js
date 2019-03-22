@@ -1,6 +1,8 @@
 var consulta = window.matchMedia('(max-width: 768px)'); 
 const $burguerMenu = document.getElementById('burguerMenu');
 const $listMenu = document.getElementById('listMenu');
+const $title = document.getElementById('h1animation');
+
 consulta.addListener(mediaQuery);
     
   function mediaQuery() {
@@ -17,9 +19,11 @@ consulta.addListener(mediaQuery);
     $burguerMenu.classList.toggle('active');
     $listMenu.classList.toggle('active');
     if($burguerMenu.classList == "icon icon-menu active") {
+      $title.style.animationName = "fin";
       $burguerMenu.style.backgroundColor = "#188fff";
     } else {
       $burguerMenu.style.backgroundColor = "unset";
+      $title.style.animationName = "pulso";
     }
     console.log("Auí debemos de poner el menu en modo visible!");
   });
