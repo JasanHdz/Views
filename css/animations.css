@@ -1,5 +1,5 @@
 .portada h1 {
-  animation: pulso 1.5s;
+  animation: pulso .3s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   will-change: opacity;
