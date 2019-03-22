@@ -216,22 +216,33 @@ a {
   background-color: #00395E;
 }
 .portada {
+  padding-top: 77px;
   display: flex;
   justify-content: center;
-  /* height: 500px; */
-}
-.portada img {
+  align-items: center;
+  height: 400px;
+  flex-wrap: wrap;
+  background-image: url("../images/background.jpg");
+  object-fit: cover;
   background-size: cover;
-  /* height: 500px; */
+  background-repeat: no-repeat;
 }
+
+.portada h1 {
+  padding: 10px;
+  font-size: 2em;
+  border-radius: 8px;
+  color: white;
+  background-color: rgba(4, 5, 35, .78);
+}
+
 
 @media screen and (max-width: 768px) {
   .portada {
-    height: 400px;
-    /* background-position-y: 22px; */
-  }
-  .header img {
-    margin-left: 20px;
+    background-position-x: center;
+    background-position-y: 20px;
+    background-position-y: 76px;
+    height: 300px;
   }
   .icon {
     display: flex;
