@@ -113,6 +113,9 @@ body {
   color: white;
   font-size: 2em;
 }
+.container-inicio {
+  padding-left: 20px;
+}
 
 .container {
   padding: 20px 0;
@@ -123,6 +126,10 @@ body {
   /* border: 1px solid red; */
   align-items: center;
   padding-top: 77px;
+}
+.container.open {
+  height: 80vh;
+  justify-content: center;
 }
 .login {
   margin: 10px;
@@ -146,6 +153,7 @@ body {
 .login input::placeholder {
   color: #cfd2d5; 
 }
+
 input:focus {
   border-bottom: 2px solid #188fff; 
 }
@@ -203,7 +211,25 @@ a {
   color:#188fff;
 }
 
+.footer {
+  height: 250px;
+  background-color: #00395E;
+}
+.portada {
+  display: flex;
+  justify-content: center;
+  /* height: 500px; */
+}
+.portada img {
+  background-size: cover;
+  /* height: 500px; */
+}
+
 @media screen and (max-width: 768px) {
+  .portada {
+    height: 400px;
+    /* background-position-y: 22px; */
+  }
   .header img {
     margin-left: 20px;
   }
@@ -250,4 +276,7 @@ a {
     color: red;
     transition: .3s;
   }
+
+
+
 }
