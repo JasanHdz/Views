@@ -1,3 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?apyikb');
+  src:  url('../fonts/icomoon.eot?apyikb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?apyikb') format('truetype'),
+    url('../fonts/icomoon.woff?apyikb') format('woff'),
+    url('../fonts/icomoon.svg?apyikb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e900";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-lifebuoy:before {
+  content: "\e941";
+}
+.icon-user1:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -8,11 +59,60 @@ body {
   height: 77px;
   display: flex;
   align-items: center;
+  /* border: 1px solid yellow; */
+  justify-content: center;
+  position: fixed;
 }
-.header img {
+/* .header img {
   margin-left: 50px;
+} */
+
+.wrapper {
+  padding: 0 20px;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid pink; */
 }
 
+.menu {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  /* width: 300px; */
+  /* justify-content: space-around; */
+}
+
+.menu li {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  line-height: 77px;
+  height: 100%;
+  padding: 0 10px;
+  /* border: 1px solid green; */
+}
+
+.menu li a {
+  display: inherit;
+  width: inherit;
+  height: 100%;
+  /* border: 1px solid yellow; */
+}
+
+.menu li:hover {
+  background-color: blue;
+}
+
+.icon {
+  display: none;
+  color: white;
+  font-size: 2em;
+}
 
 .container {
   padding: 20px 0;
@@ -22,6 +122,7 @@ body {
   /* width: 800px; */
   /* border: 1px solid red; */
   align-items: center;
+  padding-top: 77px;
 }
 .login {
   margin: 10px;
@@ -105,5 +206,48 @@ a {
 @media screen and (max-width: 768px) {
   .header img {
     margin-left: 20px;
-}
+  }
+  .icon {
+    display: flex;
+    cursor: pointer;
+  }
+  .icon-menu {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    width: 100%;
+    background-color: rgba(28, 54, 67, .9);
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 77px;
+    right: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu li {
+    height: auto;
+    /* border: 1px solid red; */
+    text-align: initial;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .menu li:hover {
+    background-color: unset;
+  }
+  .menu li:hover a {
+    color: red;
+    transition: .3s;
+  }
 }

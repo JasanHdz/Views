@@ -9,16 +9,37 @@
 </head>
 <body>
   <div class="header">
-    <img src="images/buap_blue.png" alt="" >
+    <div class="wrapper">
+      <img src="images/buap_blue.png" alt="" >
+
+      <nav class="menu" id="listMenu">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Profesores</a>
+        </li>
+        <li>
+          <a href="">Nosotros</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </nav>
+      <span class="icon icon-menu" id="burguerMenu"></span>
+      
+    </div>
   </div>
   <div class="container">
     <p>Iniciar Sesión</p>
     <form action="" class="login" method="POST">
-      <input type="text" name="email" id="" autocurrect="none" autofocus="true" autocomplete="username" placeholder="Introduce tu correo electrónico">
-      <button type="submit" class="btn primary">Siguiente</button>
+      <input type="text" name="email" id="" autocurrect="none" autofocus="true" autocomplete="username" placeholder="Introduce tu matricula">
+      <input type="password" name="password" id="" placeholder="Contraseña">
+        <button type="submit" class="btn primary">Siguiente</button>
     </form>
-    <p><a href="">¿Tienes problemas para Iniciar sesión?</a></p>
-    <p class="btn acount"><a href="">Crear cuenta</a></p>
+    <p style="margin-top:0;"><a href="">¿Tienes problemas para Iniciar sesión?</a></p>
+    <p class="btn acount"><a href="register.html">Crear cuenta</a></p>
   </div>
+  <script src="js/toggle.js"></script>
 </body>
 </html>
