@@ -8,28 +8,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="header">
-    <div class="wrapper">
-      <img src="images/buap_blue.png" alt="" >
-
-      <nav class="menu" id="listMenu">
-        <li>
-          <a href="index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="">Profesores</a>
-        </li>
-        <li>
-          <a href="">Nosotros</a>
-        </li>
-        <li>
-          <a href="register.html">Registrarse</a>
-        </li>
-      </nav>
-      <span class="icon icon-menu" id="burguerMenu"></span>
-      
-    </div>
-  </div>
+    <div class="header">
+        <div class="wrapper">
+          <div style="display:flex;">
+            <img src="images/buap_blue.png" alt="" >
+            <div style="display: flex;">
+              <img src="images/fccmin.png" alt="" style="width: 54px; height: 71px;">
+              <p style="margin-left:4px;color:#bde5ff;font-weight:600; align-self:center;">Facultad de <br>Cs. de la Computación</p>
+            </div>
+          </div>
+    
+          <nav class="menu" id="listMenu">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="">Profesores</a>
+            </li>
+            <li>
+              <a href="">Nosotros</a>
+            </li>
+            <li>
+              <a href="register.html">Registro</a>
+            </li>
+          </nav>
+          <span class="icon icon-menu" id="burguerMenu"></span>
+          
+        </div>
+      </div>
   <div class="container open">
     <p>Iniciar Sesión</p>
     <form action="" class="login" method="POST">
@@ -40,6 +46,33 @@
     <p style="margin-top:0;"><a href="">¿Tienes problemas para Iniciar sesión?</a></p>
     <p class="btn acount"><a href="register.html">Crear cuenta</a></p>
   </div>
+  <footer class="footer">
+      <form action="" class="form">
+        <div class="item logos">
+          <div style="height:90px;display:inherit;align-items:center;">
+            <img src="images/logo_buap.png" alt="" width="170px" height="45px">
+          </div>
+          <img src="images/fccmin.png" alt="" width="25%" height="30%">
+          <p style="padding: 0 25px;text-align: justify;">Facultad de Cs. de la Computación
+              14 Sur y Av. San Claudio C.P.
+              Puebla, Puebla, México
+          </p>
+          <p style="margin-left: -64px;">Email:<br> profesorsfcc@buap.com.mx </p>
+        </div>
+        <div class="item information">
+          <p>Boletin</p>
+          <label for="name">Nombre</label>
+          <input type="text" name="name">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+        </div>
+        <div class="item description">
+          <p>Comentarios</p>
+          <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+          <button class="btn sbm" type="submit">Enviar</button>
+        </div>
+      </form>
+    </footer>
   <script src="js/toggle.js"></script>
 </body>
 </html>
