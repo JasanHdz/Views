@@ -424,15 +424,6 @@ a {
 }
 
 @media screen and (max-width:530px) {
-  .logos {
-    order: 3
-  }
-  .information {
-    order: 1;
-  }
-  .description {
-    order: 2;
-  }
   .header {
     font-size: .8em;
   }
@@ -451,6 +442,15 @@ a {
 }
 
 @media screen and (max-width:380px) {
+  .logos {
+    order: 3
+  }
+  .information {
+    order: 1;
+  }
+  .description {
+    order: 2;
+  }
   .teacher-img {
     max-height: 120px;
   }
