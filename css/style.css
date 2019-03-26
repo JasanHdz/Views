@@ -324,6 +324,13 @@ a {
   border: none;
   margin-bottom: 15px;
 }
+.email {
+  margin-left: -64px
+}
+.direction {
+  padding: 0 25px;
+  text-align: justify;
+}
 .description {
   display: inherit;
   flex-direction: column;
@@ -417,6 +424,15 @@ a {
 }
 
 @media screen and (max-width:530px) {
+  .logos {
+    order: 3
+  }
+  .information {
+    order: 1;
+  }
+  .description {
+    order: 2;
+  }
   .header {
     font-size: .8em;
   }
@@ -462,5 +478,17 @@ a {
   }
   .welcome-container {
     padding: 0 5px;
+  }
+  .portada h1 {
+    font-size: 1.2em;
+  }
+  .item {
+    max-width: 230px;
+  }
+  .email {
+    margin-left: 0;
+  }
+  .direction {
+    padding: 0;
   }
 }
