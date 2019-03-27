@@ -339,6 +339,68 @@ a {
   color: white;
   background: linear-gradient(to left, #fe344e, #ff7250);
 }
+/* <--------- Welcome to Teachers --------->*/
+.hello-title {
+  border-bottom: 2.2px solid #979ba7;
+  padding-bottom: 7px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 0;
+}
+.menuList, .teacher, .teacher li {
+  width: 92%;
+}
+.teacher {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+.teacher-info {
+  display: none;
+}
+.teacher-info p {
+  margin: 0;
+  padding: 0 10px;
+  /* font-size: .8em; */
+  /* text-align: center; */
+}
+.teacher li {
+  padding: 2.5px 10px;
+  display: inline-block;
+  color: #188fff;
+}
+
+.clase {
+  color:  #00395E;
+  font-size: 1.9em;
+  width: auto;
+}
+.hour {
+  font-weight: 600;
+}
+.day {
+  display: none;
+}
+.weekend {
+  display: none;
+}
+
+.list.w {
+  color: red;
+}
+
+.teacher-info .list {
+  border: 1px solid;
+  margin-left: 1px;
+  cursor: pointer;
+}
+.teacher-title {
+  cursor: pointer;
+}
+.active {
+  display: initial;
+}
+/* Welcome to Teachers - FIN */
 @media screen and (max-width: 900px) {
   .form {
     justify-content: center;
@@ -443,7 +505,7 @@ a {
 
 @media screen and (max-width:380px) {
   .logos {
-    order: 3
+    order: 3;
   }
   .information {
     order: 1;

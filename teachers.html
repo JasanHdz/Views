@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Docentes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="wrapper">
+      <div style="display:flex;">
+        <img src="images/buap_blue.png" alt="" >
+        <div style="display: flex;">
+          <img src="images/fccmin.png" alt="" style="width: 54px; height: 71px;">
+          <p style="margin-left:4px;color:#bde5ff;font-weight:600; align-self:center;">Facultad de <br>Cs. de la Computación</p>
+        </div>
+      </div>
+
+      <nav class="menu" id="listMenu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="teachers.html">Profesores</a>
+        </li>
+        <li>
+          <a href="">Nosotros</a>
+        </li>
+        <li>
+          <a href="register.html">Registro</a>
+        </li>
+      </nav>
+      <span class="icon icon-menu" id="burguerMenu"></span>
+      
+    </div>
+  </div>
+  <div class="container">
+    <p class="hello-title">¡Hola! Buenos Días</p>
+    <p id="datetoday"></p>
+    <p style="width: 90%;font-weight: 600;">Lista de profesores registrados hasta el día de hoy:</p>
+    <nav class="menuList">
+      <div class="teacher">
+        <li class="teacher-title" id="teacher">Jorge Vargas Rodriguez</li>
+        <div class="teacher-info" id="teacher-options">
+          <p>Docente FCC</p>
+          <li class="list" id="list-day">Horario del Día</li>
+          <div class="itm day" id="Hour-day">
+            <p class="clase"><span class="hour">7:00</span>Clase Fisíca</p>
+            <p class="teacher-desc">hasta las 9:59 hrs., en el salón: 101-1C004<br>
+            NRC: 40260 | Docencias
+            </p>
+          </div>
+          <li class="list" id="hour-weekend">Horario Semanal</li>
+          <div class="itm weekend" id="weekend">
+            <li class="list w">Lunes</li> 
+            <li class="list w">Martes</li> 
+            <li class="list w">Miercoles</li> 
+            <li class="list w">Jueves</li> 
+            <li class="list w">Viernes</li> 
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script src="js/toggle.js"></script>
+  <script src="js/touch.js"></script>
+</body>
+</html>

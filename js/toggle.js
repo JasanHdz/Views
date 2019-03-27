@@ -27,3 +27,12 @@ consulta.addListener(mediaQuery);
     }
     console.log("Auí debemos de poner el menu en modo visible!");
   });
+
+  const $datetoday = document.getElementById('datetoday');
+  let hoy = new Date();
+  let diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+  const MESES = ["Enero", "Febrero", "Marzo", "Abril", 
+			"Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  const dateToday = `${diasSemana[hoy.getDay()]} ${hoy.getDate()} de ${MESES[hoy.getMonth()]} del ${hoy.getFullYear()}`;
+  // console.log(dateToday);
+  $datetoday.textContent = `${dateToday}`;
