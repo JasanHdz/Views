@@ -33,6 +33,6 @@ consulta.addListener(mediaQuery);
   let diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado", "Domingo"];
   const MESES = ["Enero", "Febrero", "Marzo", "Abril", 
 			"Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-  const dateToday = `${diasSemana[hoy.getDay()]} ${hoy.getDate()} de ${MESES[hoy.getMonth()]} del ${hoy.getFullYear()}`;
+  const dateToday = `${diasSemana[hoy.getDay()-1]} ${hoy.getDate()} de ${MESES[hoy.getMonth()]} del ${hoy.getFullYear()}`;
   // console.log(dateToday);
   $datetoday.textContent = `${dateToday}`;
