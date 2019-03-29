@@ -188,7 +188,7 @@ body {
   .time {
     width: 100px;
     height: 170px;
-
+    margin: 0 2px;
   }
   .content {
     flex-direction: column;
