@@ -12,7 +12,7 @@ body {
   padding-top: 77px;
   display: flex;
   background-color: #0075e2;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 300px;
   justify-content: center;
 }
@@ -182,10 +182,18 @@ body {
 
 @media screen and (max-width:500px) {
   .my-time {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
   }
   .time {
-    width: 120px;
+    width: 100px;
+    height: 170px;
+
+  }
+  .content {
+    flex-direction: column;
+  }
+  .num {
+    padding-top: 6px;
   }
 }
